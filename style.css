@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-attachment: fixed;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("assets/woodBackground2.png");
+}
+#mainBody {
+    margin: auto;
+    width: 60%;
+    background-color: lightgray;
+    box-shadow: 5px 0 10px black, -5px 0 20px black;
+    min-width: 1100px;
+}
+
+
+header {
+    background-color: gray;
+    position: relative;
+    z-index: 1;
+    border-bottom: solid 3px black;
+    padding: 1%;
+    background-image: url("assets/woodBackground.png");
+    color: whitesmoke;
+}
+#navBar {
+    text-align: right;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    padding: 1%;
+    border: solid 1px black;
+    border-radius: 5%;
+    background-color: darkgray;
+}
+nav li a {
+    text-decoration: none;
+    color: dimgray;
+}
+nav #activeTab {
+    font-weight: bold;
+    background-color: goldenrod;
+}
+nav #activeTab a {
+    color: black;
+}
+nav li a:hover {
+    color: black;
+}
+
+
+#main {
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+    width: 96%;
+}
+.productColumn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 0 10px black, -5px 0 10px black;
+    background-image: url("assets/columnBackground.png")
+}
+.productColumn h1 {
+    padding: 5% 0;
+    height: 1em;
+    color: white;
+}
+
+
+#offensive {
+    background-color: #660000;
+}
+#defensive {
+    background-color: #006600;
+}
+#consumables {
+    background-color: #000066;
+}
+
+
+.item {
+    margin: 1% 4% 5% 4%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: .5em;
+    background-color: rgb(175, 175, 175, 0.7);
+    padding: 1em;
+    border-radius: 4%;
+    min-height: 250px;
+    border: solid 1px black;
+}
+.item:hover {
+    background-color: rgb(204, 204, 204, 0.85);
+    border: solid 1px gold;
+}
+.item > div {
+    text-align: center;
+    padding: 10px 0;
+}
+.itemLeft {
+    min-width: 100%;
+    width: 100%;
+}
+.item .itemLeft img {
+    border: solid 1px black;
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+.item .itemRight {
+    padding: 1px;
+    max-width: 90%;
+}
+.item .itemRight .itemName {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item .itemRight .cost {
+    margin: 10% auto;
+    padding: 2%;
+    width: 50%;
+    background-color: gray;
+    border: solid 1px black;
+    border-radius: 7%;
+}
+.item .itemRight .cost h4 {
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+}
+.item .itemRight .cost .value {
+    color: gold;
+    text-align: center;
+}
+.amount {
+    width: 100%;
+    height: 25%;
+    margin: 10% auto 0 auto;
+}
+.amount input {
+    width: 30%;
+    height: 2em;
+    text-align: center;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+/* Forces the input arrows to show */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+}
+
+.amount button {
+    vertical-align: middle;
+    padding: 4% 1%;
+}
+.itemDescription {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.itemDescription p {
+    text-align: left;
+    padding: 1% 1% 1% 5%;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 1% 0 1% 0;
+    background-color: black;
+    background-image: url("assets/woodBackground.png");
+}
+footer h6 {
+    color: white;
+}
